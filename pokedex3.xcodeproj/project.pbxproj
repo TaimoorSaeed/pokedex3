@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		84A394161F537C7500244D61 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 84A394151F537C7500244D61 /* pokemon.csv */; };
+		84A394191F537D4000244D61 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A394181F537D4000244D61 /* Pokemon.swift */; };
+		84A3941C1F53864000244D61 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3941B1F53864000244D61 /* PokeCell.swift */; };
 		84A9B54B1F511AA7006BFDAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9B54A1F511AA7006BFDAA /* AppDelegate.swift */; };
 		84A9B54D1F511AA7006BFDAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9B54C1F511AA7006BFDAA /* ViewController.swift */; };
 		84A9B5501F511AA7006BFDAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A9B54E1F511AA7006BFDAA /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		84A394151F537C7500244D61 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
+		84A394181F537D4000244D61 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		84A3941B1F53864000244D61 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 		84A9B5471F511AA6006BFDAA /* pokedex3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokedex3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A9B54A1F511AA7006BFDAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84A9B54C1F511AA7006BFDAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +80,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84A394171F537D2900244D61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84A394181F537D4000244D61 /* Pokemon.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		84A3941A1F53861600244D61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84A3941B1F53864000244D61 /* PokeCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		84A9B53E1F511AA6006BFDAA = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +119,8 @@
 		84A9B5491F511AA6006BFDAA /* pokedex3 */ = {
 			isa = PBXGroup;
 			children = (
+				84A3941A1F53861600244D61 /* View */,
+				84A394171F537D2900244D61 /* Model */,
 				84A9B54A1F511AA7006BFDAA /* AppDelegate.swift */,
 				84A9B54C1F511AA7006BFDAA /* ViewController.swift */,
 				84A9B54E1F511AA7006BFDAA /* Main.storyboard */,
@@ -196,6 +218,7 @@
 				TargetAttributes = {
 					84A9B5461F511AA6006BFDAA = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = GB5JX3BE5S;
 						ProvisioningStyle = Automatic;
 					};
 					84A9B55A1F511AA7006BFDAA = {
@@ -263,8 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A3941C1F53864000244D61 /* PokeCell.swift in Sources */,
 				84A9B54D1F511AA7006BFDAA /* ViewController.swift in Sources */,
 				84A9B54B1F511AA7006BFDAA /* AppDelegate.swift in Sources */,
+				84A394191F537D4000244D61 /* Pokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GB5JX3BE5S;
 				INFOPLIST_FILE = pokedex3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.taimoor.pokedex3;
@@ -430,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GB5JX3BE5S;
 				INFOPLIST_FILE = pokedex3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.taimoor.pokedex3;
